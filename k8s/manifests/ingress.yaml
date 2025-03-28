@@ -5,6 +5,7 @@ metadata:
   name: go-web-app
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   ingressClassName: nginx
   rules:
