@@ -18,7 +18,8 @@ RUN go mod download
 COPY . .
 
 # Build the application
-RUN go build -o main .
+# RUN go build -o main .
+RUN go build -buildvcs=false -o main .
 
 #######################################################
 # Reduce the image size using multi-stage builds
